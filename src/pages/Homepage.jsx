@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar,Blogs, Footer } from "../components"
 
-const Homepage = () => {
+const Homepage = ({blogs}) => {
+  console.log(blogs);
   return (
     <div>
         <Navbar />
-        <Blogs /> 
+        <Blogs blogs= {blogs}/> 
         <Footer/>
     </div>
   )

@@ -23,9 +23,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden md:flex sm:mr-10 md:mr-10'>
-          <button className='border-none bg-transparent text-black mr-4'>Login</button>
-          <button className='px-8 py-3'>Sign Up</button>
-
+          <button className='px-8 py-3'>Login</button>
         </div>
 
         <div className='md:hidden' onClick={handleClick}> 
@@ -37,8 +35,7 @@ const Navbar = () => {
           <li>About</li>
           <li>Contact</li>
           <div className='flex flex-col my-4'>
-            <button className='bg-transparent text-black mb-4 py-3'>Login</button>
-            <button className='px-8 py-3'>Sign Up</button>
+            <button className='px-8 py-3'>Login</button>
           </div>
         </ul>
     </div>
