@@ -6,6 +6,9 @@ import close from '../assets/close.svg';
 const Navbar = () => {
   const [toggle, setToggle] =useState(false);
   const handleClick = () => setToggle(!toggle);
+  const goToAdmin = () => {
+    window.location.href = "https://strapi-tblog-api.onrender.com/admin";
+  };
 
   return (
     <div className='w-full h-[80px] z-10 bg-white sticky top-0 drop-shadow-lg '>
@@ -23,7 +26,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden md:flex sm:mr-10 md:mr-10'>
-          <button className='px-8 py-3'>Login</button>
+          <button className='px-8 py-3' onClick={goToAdmin}>Login</button>
         </div>
 
         <div className='md:hidden' onClick={handleClick}> 
@@ -35,7 +38,7 @@ const Navbar = () => {
           <li>About</li>
           <li>Contact</li>
           <div className='flex flex-col my-4'>
-            <button className='px-8 py-3'>Login</button>
+            <button className='px-8 py-3' onClick={goToAdmin}>Login</button>
           </div>
         </ul>
     </div>
